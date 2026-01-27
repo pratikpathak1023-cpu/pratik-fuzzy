@@ -1,0 +1,5 @@
+{
+  "name": "FuzzyLink AI - Customer-RPL Matcher",
+  "description": "An intelligent data matching tool that performs fuzzy lookups between Customer and RPL (Restricted Party List) columns, providing AI-powered similarity scoring and Excel exports.",
+  "requestFramePermissions": []
+}
