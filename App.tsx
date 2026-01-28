@@ -66,7 +66,6 @@ const App: React.FC = () => {
     
     const exportData = results.map(res => ({
       ...rawData[res.index],
-      'Fuzzy Match Result': res.matchedRpl,
       'Similarity %': res.similarity,
       'Match Status': res.status
     }));
@@ -272,7 +271,6 @@ const App: React.FC = () => {
                         <tr>
                           <th className="px-6 py-3">Customer</th>
                           <th className="px-6 py-3">RPL Reference</th>
-                          <th className="px-6 py-3">Match</th>
                           <th className="px-6 py-3">Confidence</th>
                           <th className="px-6 py-3">Status</th>
                         </tr>
@@ -282,7 +280,6 @@ const App: React.FC = () => {
                           <tr key={i} className="hover:bg-gray-50 transition-colors">
                             <td className="px-6 py-4 font-medium text-gray-800">{res.customer}</td>
                             <td className="px-6 py-4 text-gray-500">{res.originalRpl}</td>
-                            <td className="px-6 py-4 text-blue-600 font-medium">{res.matchedRpl}</td>
                             <td className="px-6 py-4">
                               <div className="flex items-center space-x-2">
                                 <div className="flex-1 w-16 bg-gray-100 h-1.5 rounded-full">
